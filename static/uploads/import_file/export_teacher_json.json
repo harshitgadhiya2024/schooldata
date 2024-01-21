@@ -1,0 +1,24 @@
+[
+  {
+    "photo_link": "static/uploads/profiles/teacher_teacherteacher.jpg",
+    "teacher_id": "36311028229960",
+    "username": "teacherteacher",
+    "first_name": "teacher",
+    "last_name": "teacher",
+    "dob": "21-01-2024",
+    "gender": "Male",
+    "contact_no": "+31 9238779893",
+    "emergency_contact_no": "+31 9238798738",
+    "email": "hgadhiysdsa8980@gmail.com",
+    "address": "ahmedabad",
+    "city": "Almere",
+    "province": "Flevoland",
+    "qualification": "ME",
+    "department": "Standard-10",
+    "subject": "Maths",
+    "joining_date": "21-01-2024",
+    "type": "teacher",
+    "inserted_on": "01-21-2024 04:04:18",
+    "updated_on": "01-21-2024 04:04:18"
+  }
+]

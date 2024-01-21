@@ -1,0 +1,35 @@
+[
+  {
+    "student": "harshitpatel10",
+    "department": "Standard-7",
+    "class_name": "A",
+    "teacher_name": "teacherteacher",
+    "attendance_date": "20-01-2024",
+    "status": "Absent",
+    "reason": "",
+    "inserted_on": "01-20-2024 15:58:32",
+    "updated_on": "01-20-2024 15:58:32"
+  },
+  {
+    "student": "harshitpatel13",
+    "department": "Standard-9",
+    "class_name": "C",
+    "teacher_name": "teacherteacher",
+    "attendance_date": "21-01-2024",
+    "status": "Present",
+    "reason": "",
+    "inserted_on": "01-21-2024 11:54:38",
+    "updated_on": "01-21-2024 11:54:38"
+  },
+  {
+    "student": "harshitpatel14",
+    "department": "Standard-10",
+    "class_name": "C",
+    "teacher_name": "teacherteacher",
+    "attendance_date": "21-01-2024",
+    "status": "Present",
+    "reason": "",
+    "inserted_on": "01-21-2024 11:55:08",
+    "updated_on": "01-21-2024 11:55:08"
+  }
+]

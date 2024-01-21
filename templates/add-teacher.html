@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from preschool.dreamstechnologies.com/template/add-teacher.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 Jan 2024 05:22:20 GMT -->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<title>Preskool - Teachers</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/static/assets/img/favicon.png">
+
+	<!-- Fontfamily -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&amp;display=swap"
+		rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+
+	<!-- Feathericon CSS -->
+	<link rel="stylesheet" href="/static/assets/plugins/feather/feather.css">
+
+	<!-- Pe7 CSS -->
+	<link rel="stylesheet" href="/static/assets/plugins/icons/flags/flags.css">
+
+	<!-- Datepicker CSS -->
+	<link rel="stylesheet" href="/static/assets/css/bootstrap-datetimepicker.min.css">
+
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" href="/static/assets/plugins/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="/static/assets/plugins/fontawesome/css/all.min.css">
+
+	<!-- Select CSS -->
+	<link rel="stylesheet" href="/static/assets/plugins/select2/css/select2.min.css">
+
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="/static/assets/css/style.css">
+</head>
+
+<body>
+
+	<!-- Main Wrapper -->
+	<div class="main-wrapper">
+
+		<!-- Header -->
+		<div class="header">
+
+			<!-- Logo -->
+			<div class="header-left">
+				<a href="/home" class="logo">
+					<img src="/static/assets/img/logo.png" alt="Logo">
+				</a>
+				<a href="index.html" class="logo logo-small">
+					<img src="/static/assets/img/logo-small.png" alt="Logo" width="30" height="30">
+				</a>
+			</div>
+			<!-- /Logo -->
+
+			<div class="menu-toggle">
+				<a href="javascript:void(0);" id="toggle_btn">
+					<i class="fas fa-bars"></i>
+				</a>
+			</div>
+
+			<!-- Mobile Menu Toggle -->
+			<a class="mobile_btn" id="mobile_btn">
+				<i class="fas fa-bars"></i>
+			</a>
+			<!-- /Mobile Menu Toggle -->
+
+			<!-- Header Right Menu -->
+			<ul class="nav user-menu">
+				<div id="google_translate_element"></div>
+				<!-- User Menu -->
+				<li class="nav-item dropdown has-arrow new-user-menus">
+					<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+						<div class="user-img">
+							<img class="rounded-circle" src="{{photo_link}}" width="31" alt="Ryan Taylor">
+							<div class="user-text">
+								<h6>{{admin_id}}</h6>
+								<p class="text-muted mb-0">{{type}}</p>
+							</div>
+						</div>
+					</a>
+					<div class="dropdown-menu">
+						<div class="user-header">
+							<div class="avatar avatar-sm">
+								<img src="{{photo_link}}" alt="User Image" class="avatar-img rounded-circle">
+							</div>
+							<div class="user-text">
+								<h6>{{admin_id}}</h6>
+								<p class="text-muted mb-0">{{type}}</p>
+							</div>
+						</div>
+						<a class="dropdown-item" href="/admin/admin_profile">Admin Profile</a>
+						<a class="dropdown-item" href="/logout">Logout</a>
+					</div>
+				</li>
+				<!-- /User Menu -->
+
+			</ul>
+			<!-- /Header Right Menu -->
+
+		</div>
+		<!-- /Header -->
+
+		<!-- Sidebar -->
+		<div class="sidebar" id="sidebar">
+			<div class="sidebar-inner slimscroll">
+				<div id="sidebar-menu" class="sidebar-menu">
+					<ul>
+						<li class="menu-title">
+							<span>Main Menu</span>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="feather-grid"></i> <span> Dashboard</span> <span
+									class="menu-arrow"></span></a>
+							<ul>
+								<li><a href="/admin_dashboard">Admin Dashboard</a></li>
+							</ul>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="fas fa-user-cog"></i> <span> Admins</span> <span
+									class="menu-arrow"></span></a>
+							<ul>
+								<li><a href="/admin/admin_data">Admin List</a></li>
+								<li><a href="/admin/add_admin">Admin Add</a></li>
+							</ul>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="fas fa-graduation-cap"></i> <span> Students</span> <span
+									class="menu-arrow"></span></a>
+							<ul>
+								<li><a href="/admin/student_data">Student List</a></li>
+								<li><a href="/admin/add_student">Student Add</a></li>
+							</ul>
+						</li>
+						<li class="submenu active">
+							<a href="#"><i class="fas fa-chalkboard-teacher"></i> <span> Teachers</span> <span
+									class="menu-arrow"></span></a>
+							<ul>
+								<li><a href="/admin/teacher_data">Teacher List</a></li>
+								<li><a href="/admin/add_teacher" class="active">Teacher Add</a></li>
+							</ul>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="fas fa-building"></i> <span> Departments</span> <span
+									class="menu-arrow"></span></a>
+							<ul>
+								<li><a href="/admin/department_data">Department List</a></li>
+								<li><a href="/admin/add_department">Department Add</a></li>
+							</ul>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="fas fa-book-reader"></i> <span> Subjects</span> <span
+									class="menu-arrow"></span></a>
+							<ul>
+								<li><a href="/admin/subject_data">Subject List</a></li>
+								<li><a href="/admin/add_subject">Subject Add</a></li>
+							</ul>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="fas fa-book-reader"></i> <span> Classes</span> <span
+									class="menu-arrow"></span></a>
+							<ul>
+								<li><a href="/admin/classes_data">Classes List</a></li>
+							</ul>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="fas fa-book-reader"></i> <span> Attendance</span> <span
+									class="menu-arrow"></span></a>
+							<ul>
+								<li><a href="/admin/attendance_data">Attendance List</a></li>
+							</ul>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="fas fa-book-reader"></i> <span> Email Service</span> <span
+									class="menu-arrow"></span></a>
+							<ul>
+								<li><a href="/email_sending">All In One</a></li>
+								<li><a href="/teacher_mail">With Teacher</a></li>
+								<li><a href="/import_mail">With import file</a></li>
+								<li><a href="/department_mail">With Department</a></li>
+								<li><a href="/email_mail">With Email</a></li>
+								<li><a href="/student_mail">With Student</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- /Sidebar -->
+
+		<!-- Page Wrapper -->
+		<div class="page-wrapper">
+			<div class="content container-fluid">
+
+				<!-- Page Header -->
+				<div class="page-header">
+					<div class="row align-items-center">
+						<div class="col-sm-12">
+							<!-- <div class="page-sub-header">
+								<h3 class="page-title">Add Admins</h3>
+							</div> -->
+							<div class="col-md-auto" id="remove_tag" style="margin: 10px;">
+								{% with messages = get_flashed_messages(with_categories=true) %} {% if messages %} {%
+								for category, message in
+								messages %}
+								<div class="alert alert-{{category}} alert-dismissable" role="alert" id="inside_alert">
+									<button type="button" class="close" data-dismiss="alert" aria-label="close"><span
+											aria-hidden="true" onclick="hide_button()">x</span></button>
+									{{message}}
+								</div>
+								{% endfor %} {% endif %} {% endwith %}
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Page Header -->
+
+				<div class="row">
+					<div class="col-sm-12">
+
+						<div class="card">
+							<div class="card-body">
+								<form action="/admin/add_teacher" method="POST" enctype="multipart/form-data">
+									<div class="row">
+										<div class="col-12">
+											<h5 class="form-title student-info">Teacher Information</h5>
+										</div>
+
+										<div class="col-12 col-sm-4">
+											<div class="form-group local-forms">
+												<label>First Name <span class="login-danger">*</span></label>
+												<input class="form-control" name="first_name" value="{{first_name}}"
+													type="text" placeholder="Enter First Name" required>
+											</div>
+										</div>
+										<div class="col-12 col-sm-4">
+											<div class="form-group local-forms">
+												<label>Last Name <span class="login-danger">*</span></label>
+												<input class="form-control" name="last_name" value="{{last_name}}"
+													type="text" placeholder="Enter First Name" required>
+											</div>
+										</div>
+										<div class="col-12 col-sm-4">
+											<div class="form-group local-forms">
+												<label>UserName <span class="login-danger">*</span></label>
+												<input class="form-control" name="username" value="{{username}}"
+													type="text" placeholder="Enter UserName" required>
+											</div>
+										</div>
+										<div class="col-12 col-sm-4">
+											<div class="form-group local-forms">
+												<label>Password <span class="login-danger">*</span></label>
+												<input class="form-control pass-input" value="{{password}}"
+													name="password" type="text" required>
+												<span class="profile-views feather-eye toggle-password"></span>
+											</div>
+										</div>
+										<div class="col-12 col-sm-4">
+											<div class="form-group local-forms calendar-icon">
+												<label>Date Of Birth <span class="login-danger">*</span></label>
+												<input class="form-control datetimepicker" type="text" name="dob"
+													value="{{dob}}" placeholder="DD-MM-YYYY" required>
+											</div>
+										</div>
+										<div class="col-12 col-sm-4">
+											<div class="form-group local-forms">
+												<label>Gender <span class="login-danger">*</span></label>
+												<select name="gender" id="gender" class="form-control select"
+													required>
+													<option>Female</option>
+													<option>Male</option>
+													<option>Others</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-12 col-sm-4">
+											<div class="form-group local-forms">
+												<label>Country Code <span class="login-danger">*</span></label>
+												<select name="countrycode" id="countrycode"
+													class="form-control select" required>
+													<option selected>+31</option>
+													{% for countrycode in allcountrycode %}
+													<option>{{countrycode}}</option>
+													{% endfor %}
+												</select>
+											</div>
+										</div>
+										<div class="col-12 col-sm-4">
+											<div class="form-group local-forms">
+												<label>Phone-Number <span class="login-danger">*</span></label>
+												<input class="form-control" value="{{contact_no}}" name="contact_no"
+													type="number" placeholder="Enter Phone Number" required>
+											</div>
+										</div>
+										<div class="col-12 col-sm-4">
+											<div class="form-group local-forms">
+												<label>Emergency Phone-Number <span
+														class="login-danger">*</span></label>
+												<input class="form-control" value="{{emergency_contact_no}}"
+													name="emer_contact_no" type="number"
+													placeholder="Enter Emergency Phone Number" required>
+											</div>
+										</div>
+										<div class="col-12 col-sm-4">
+											<div class="form-group local-forms">
+												<label>E-Mail <span class="login-danger">*</span></label>
+												<input class="form-control" name="email" value="{{email}}" type="email"
+													placeholder="Enter Email Address" required>
+											</div>
+										</div>
+										<div class="col-12 col-sm-4">
+											<div class="form-group local-forms">
+												<label>Address <span class="login-danger">*</span></label>
+												<input class="form-control" name="address" value="{{address}}"
+													type="text" placeholder="Enter Address" required>
+											</div>
+										</div>
+										<div class="col-12 col-sm-4">
+											<div class="form-group local-forms">
+												<label>City <span class="login-danger">*</span></label>
+												<select id="city" name="city"
+													class="form-control select" onchange="getProvince()" required>
+													{% for city in allcity %}
+													<option>{{city}}</option>
+													{% endfor %}
+												</select>
+											</div>
+										</div>
+										<div class="col-12 col-sm-4">
+											<div class="form-group local-forms">
+												<label>Province <span class="login-danger">*</span></label>
+												<input type="text" id="province" value="{{province}}"
+													class="form-control" name="province" readonly required>
+											</div>
+										</div>
+										<div class="col-12 col-sm-4">
+											<div class="form-group local-forms">
+												<label>Qualification <span class="login-danger">*</span></label>
+												<select name="qualification" id="qualification"
+													class="form-control select" required>
+													{% for qualification in allqualification %}
+													<option>{{qualification}}</option>
+													{% endfor %}
+												</select>
+											</div>
+										</div>
+										<div class="col-12 col-sm-4">
+											<div class="form-group local-forms">
+												<label>Department <span class="login-danger">*</span></label>
+												<select name="department" id="department"
+													class="form-control select" required>
+													{% for department in alldepartment %}
+													<option>{{department}}</option>
+													{% endfor %}
+												</select>
+											</div>
+										</div>
+										<div class="col-12 col-sm-4">
+											<div class="form-group local-forms">
+												<label>Subject <span class="login-danger">*</span></label>
+												<select name="subject" id="subject" class="form-control select"
+													required>
+													{% for subject in allsubjects %}
+													<option>{{subject}}</option>
+													{% endfor %}
+												</select>
+											</div>
+										</div>
+										<div class="col-12 col-sm-4">
+											<div class="form-group local-forms calendar-icon">
+												<label>Joining Date <span class="login-danger">*</span></label>
+												<input class="form-control datetimepicker" type="text"
+													name="joining_date" value="{{joining_date}}"
+													placeholder="DD-MM-YYYY" required>
+											</div>
+										</div>
+										<div class="col-12 col-sm-4">
+											<div class="form-group students-up-files">
+												<label>Upload Admin Photo (150px X 150px) <span class="login-danger">*</span></label>
+												<div class="uplod">
+													<div id="browsebutton"><input class="form-control" type="file" name="file" id="formFile"></div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="student-submit">
+												<button type="submit" class="btn btn-primary">Submit</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- /Page Wrapper -->
+
+	</div>
+	<!-- /Main Wrapper -->
+	<script>
+		function getProvince() {
+			var selectedCity = document.getElementById("city").value;
+
+			// Make an AJAX request to the server
+			var xhr = new XMLHttpRequest();
+			xhr.onreadystatechange = function () {
+				if (this.readyState == 4 && this.status == 200) {
+					// Update the province field with the response from the server
+					document.getElementById("province").value = this.responseText;
+				}
+			};
+			xhr.open("GET", "/get_province?city=" + selectedCity, true);
+			xhr.send();
+		}
+	</script>
+
+	<script>
+		const $select = document.querySelector('#gender');
+		$select.value = '{{ gender }}'
+		const $selectcode = document.querySelector('#countrycode');
+		$selectcode.value = '{{ countrycode }}'
+		const $selectcity = document.querySelector('#city');
+		$selectcity.value = '{{ city }}'
+		const $selectprovince = document.querySelector('#province');
+		$selectprovince.value = '{{ province }}'
+		const $selectdepartment = document.querySelector('#department');
+		$selectdepartment.value = '{{ department }}'
+		const $selectqualification = document.querySelector('#qualification');
+		$selectqualification.value = '{{ qualification }}'
+		const $selectsubject = document.querySelector('#subject');
+		$selectsubject.value = '{{ subject }}'
+	</script>
+
+	<!-- jQuery -->
+	<script src="/static/assets/js/jquery-3.7.1.min.js"></script>
+
+	<!-- Bootstrap Core JS -->
+	<script src="/static/assets/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Feather Icon JS -->
+	<script src="/static/assets/js/feather.min.js"></script>
+	<script type="text/javascript"
+		src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+	<!-- Slimscroll JS -->
+	<script src="/static/assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+	<!-- Select2 JS -->
+	<script src="/static/assets/plugins/select2/js/select2.min.js"></script>
+
+	<!-- Datepicker Core JS -->
+	<script src="/static/assets/plugins/moment/moment.min.js"></script>
+	<script src="/static/assets/js/bootstrap-datetimepicker.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="/static/assets/js/script.js"></script>
+</body>
+
+<!-- Mirrored from preschool.dreamstechnologies.com/template/add-teacher.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 Jan 2024 05:22:20 GMT -->
+
+</html>

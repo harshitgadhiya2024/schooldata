@@ -1,0 +1,110 @@
+[
+  {
+    "subject_id": "4276",
+    "subject_name": "English",
+    "department_name": "Standard-7",
+    "subject_start_date": "18-01-2024",
+    "type": "subject",
+    "inserted_on": "01-18-2024 18:25:06",
+    "updated_on": "01-18-2024 18:25:06"
+  },
+  {
+    "subject_id": "1479",
+    "subject_name": "Gujarati",
+    "department_name": "Standard-7",
+    "subject_start_date": "18-01-2024",
+    "type": "subject",
+    "inserted_on": "01-18-2024 18:25:28",
+    "updated_on": "01-18-2024 18:25:28"
+  },
+  {
+    "subject_id": "6914",
+    "subject_name": "Science",
+    "department_name": "Standard-7",
+    "subject_start_date": "18-01-2024",
+    "type": "subject",
+    "inserted_on": "01-18-2024 18:25:36",
+    "updated_on": "01-18-2024 18:25:36"
+  },
+  {
+    "subject_id": "1007",
+    "subject_name": "Maths",
+    "department_name": "Standard-7",
+    "subject_start_date": "18-01-2024",
+    "type": "subject",
+    "inserted_on": "01-18-2024 18:25:46",
+    "updated_on": "01-18-2024 18:25:46"
+  },
+  {
+    "subject_id": "1141",
+    "subject_name": "Social Science",
+    "department_name": "Standard-7",
+    "subject_start_date": "18-01-2024",
+    "type": "subject",
+    "inserted_on": "01-18-2024 18:25:57",
+    "updated_on": "01-18-2024 18:25:57"
+  },
+  {
+    "subject_id": "3639",
+    "subject_name": "Maths",
+    "department_name": "Standard-8",
+    "subject_start_date": "18-01-2024",
+    "type": "subject",
+    "inserted_on": "01-18-2024 18:26:13",
+    "updated_on": "01-18-2024 18:26:13"
+  },
+  {
+    "subject_id": "8428",
+    "subject_name": "English",
+    "department_name": "Standard-8",
+    "subject_start_date": "18-01-2024",
+    "type": "subject",
+    "inserted_on": "01-18-2024 18:26:22",
+    "updated_on": "01-18-2024 18:26:22"
+  },
+  {
+    "subject_id": "8818",
+    "subject_name": "Hindi",
+    "department_name": "Standard-8",
+    "subject_start_date": "18-01-2024",
+    "type": "subject",
+    "inserted_on": "01-18-2024 18:26:30",
+    "updated_on": "01-18-2024 18:26:30"
+  },
+  {
+    "subject_id": "6688",
+    "subject_name": "Gujarati",
+    "department_name": "Standard-8",
+    "subject_start_date": "18-01-2024",
+    "type": "subject",
+    "inserted_on": "01-18-2024 18:26:39",
+    "updated_on": "01-18-2024 18:26:39"
+  },
+  {
+    "subject_id": "7557",
+    "subject_name": "Social Science",
+    "department_name": "Standard-8",
+    "subject_start_date": "18-01-2024",
+    "type": "subject",
+    "inserted_on": "01-18-2024 18:26:55",
+    "updated_on": "01-18-2024 18:26:55"
+  },
+  {
+    "subject_id": "7605",
+    "subject_name": "Science",
+    "department_name": "Standard-8",
+    "subject_start_date": "21-01-2024",
+    "type": "subject",
+    "inserted_on": "01-21-2024 05:07:34",
+    "updated_on": "01-21-2024 05:07:34"
+  },
+  {
+    "subject_id": "3271",
+    "subject_name": "Hindi",
+    "department_name": "Standard-7",
+    "subject_start_date": "21-01-2024",
+    "type": "subject",
+    "inserted_on": "01-21-2024 05:13:26",
+    "updated_on": "01-21-2024 05:13:26"
+  }
+]
